@@ -9,7 +9,6 @@ body {
 
 .editingLayout {
   display: block;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 1280px;
@@ -183,7 +182,7 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: blur(5px); /* Add glass effect */
   -webkit-backdrop-filter: blur(5px); /* For Safari */
   background-color: rgba(255, 255, 255, 0.095);
-  transition: allr 1s ease;
+  transition: all 0.3s ease;
   
 }
 
@@ -196,8 +195,19 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .contentContainer {
-  display: grid;
+  display: -webkit-box;
   position: relative;
+}
+.spaceForAds{
+  margin-top: 10px;
+  width: 260px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.spaceForAdsBottom{
+  margin: 10px;
+  height: 50px;
 }
 
 .instaLogo {
@@ -228,14 +238,65 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
   display: inline-flex;
   position: relative;
-  border: 2px solid rgb(189, 189, 189);
+  
   z-index: 9999;
   
 }
+.myimg {
+  margin-right: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+  box-shadow: 0px 0px 10px #bd2586;
+  animation: spinShadow 6s linear infinite;
+}
+.soicon-insta {
+  width: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0px 5px 0px 0px;
+  color: transparent !important;
+  text-decoration: none !important;
+}
+.soicon {
+  width: 30px;
+  border-radius: 10px;
+  margin: 0px 5px 0px 5px;
+  color: transparent !important;
+  text-decoration: none !important;
+}
+@keyframes spinShadow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.icons {
+  text-align: center;
+  margin: auto;
+  padding-top: 60px;
+}
 
+.footer {
+  margin-top: 80px;
+  height: 350px;
+  width: 100%;
+  z-index: 6;
+  background-color: #494949;
+}
+.mylogo {
+  margin-top: 3px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  filter: drop-shadow(0px 0px 15px rgba(216, 11, 188, 0.5));
+  padding-top: 50px;
+}
 /* Apply blur to the page except for .instaLogo when it is being hovered */
 
 .instaLogoContainer {
+  margin-top: 30px !important;
   z-index: 2;
   margin: auto;
   width: 100%;
@@ -255,6 +316,61 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   object-fit: contain;
   margin-right: 10px;
+}
+@media only screen and (max-width: 1290px) {
+
+  .contentContainer {
+    display: -webkit-box;
+    position: relative;
+}
+
+  .tools {
+    box-shadow: 0 0px 15px rgba(69, 69, 69, 0.1);
+    max-width: 300px;
+    background-color: #323232;
+    min-width: 300px;
+    width: 300px;
+    height: 345px;
+    border: 2px solid rgb(189, 189, 189);
+    border-radius: 10px;
+}
+
+.toolsScroll {
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-y: auto;
+  max-height: 280px;
+}
+
+.image_res {
+  
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-left: 10px;
+  width: -webkit-fill-available;
+  max-width: 600px;
+  min-width: 600px;
+  height: 345px;
+}
+
+
+  .instaLogoContainer{
+    margin-top: 10px !important;
+  }
+
+  .editingLayout {
+    margin: 10px;
+    display: block;
+   
+    width: 1000px;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px 40px;
+    background-color: #494949;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1); /* Add the box-shadow property */
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
