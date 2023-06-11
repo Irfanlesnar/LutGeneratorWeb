@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lut Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js">
+    </script>
+  </head>
+
+  <body>
+
+    <div class="makeBlur">
+
+    </div>
+
+    <div class="contentContainer">
+    <div class="instaLogoContainer">
+      <div class="instaLogo">
+        <img class="insta" src="images/instagram.svg"/>
+      <h class="instaText">Irfanlesnar</h>
+      </div>
+
+   
+      
+      
+    </div>
+
+
+    
+    
+
+
+    <div class="editingLayout">
+      <div>
+        <p class="heading">Lut Generator</p>
+      </div>
+      <div class="rows">
+
+
+        <div class="tools">
+          <p class="sub_heading">Filters</p>
+
+
+
+          <div class="toolsScroll">
+
+          <div class="column">
+            <h  id="brightness" class=" bootTools">Brightness</h>
+
+            <div class="range">
+              <input type="range" class="form-range" id="rangeBrightness" />
+            </div>
+
+
+          </div>
+
+          <div class="column">
+            <h   id="contrast" class=" bootTools  ">Contrast</h>
+
+            <div class="range">
+              <input type="range" class="form-range" id="rangeContrast" />
+            </div>
+          </div>
+
+
+
+
+          <div class="column">
+            <h   id="saturation" class=" bootTools  ">Saturation</h>
+          
+            <div class="range">
+              <input type="range" class="form-range" id="rangeSaturation" />
+            </div>
+          </div>
+
+
+
+          <div class="column">
+            <h   id="temperature" class=" bootTools  ">Temperature</h>
+            <div class="range">
+              <input type="range" class="form-range" id="rangeTemperature" />
+            </div>
+          </div>
+
+
+    
+          <div class="column">
+            <h   class="hue bootTools  ">HUE</h>
+            <div class="range">
+              <input type="range" class="form-range" id="rangeHue" />
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div style="margin-top: 50px;display: none;" class="column">
+            <h class="balance bootTools heading">Color Balance</h><br><br>
+            
+
+            <div class="range rgb">
+              <h style="margin-right: 10px;" class="balance bootTools">R</h>
+              <input type="range" class="form-range" id="redRange" />
+            </div>
+
+            <div  class="range rgb">
+              <h style="margin-right: 10px;" class="balance bootTools">G</h>
+              <input type="range" class="form-range" id="greenRange" />
+            </div>
+
+            <div class="range rgb">
+              </b><h style="margin-right: 10px;" class="balance bootTools">B</h>
+              <input type="range" class="form-range" id="blueRange" />
+            </div>
+
+          </div>
+
+
+        </div>
+
+        
+        </div>
+
+
+        
+        
+
+
+        <div class="image_res">
+          <img class="imageImg" src="images/demoImage1.jpg" />
+          <img style="display: none;" class="lutImage" src="images/default.png" />
+
+        </div>
+      </div>
+
+
+      <div class="container-fluid">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="bootBottom uploadBtn btn btn-primary mr-2">Upload</button>
+
+
+        <button type="button" class="bootBottom resetBtn btn btn-primary mr-2">Reset</button>
+        <button id="downloadButton" type="button" class="bootBottom downloadBtn btn btn-primary">Download LUT</button>
+      </div>
+      </div>
+      
+
+
+    </div>
+
+
+  </div>
+    <div class="mobileDisplay">
+
+      
+
+      <div class="irfanlesnarImg">
+        <img class="irfans" src="images/mobileBg.png"/>
+
+      </div>
+
+      <div class="myImg">
+        <img class="buttonSparkAsset" src="images/sparkAssetBtn.svg"/>
+        <img class="googlePlay" src="images/googlePlay.svg"/>
+        <h class="heading betterEx" >For better experience use Spark AR Assets</h>
+      </div>
+    
+      
+    </div>
+  </body>
+</html>
